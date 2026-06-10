@@ -420,7 +420,34 @@
       color: var(--verde-oscuro);
       font-weight: 700;
     }
+.product-extra {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+  color: var(--gris-700);
+  background: #f9fafb;
+}
 
+.product-card.active .product-extra {
+  max-height: 250px;
+  padding: 1rem;
+  border-top: 1px solid var(--gris-200);
+}
+
+.product-card {
+  cursor: pointer;
+}
+
+.product-extra ul {
+  padding-left: 18px;
+  margin-top: 8px;
+}
+
+.product-extra li {
+  margin-bottom: 4px;
+}
     /* =========================================================
        PROCESO DE COMPRA
     ========================================================= */
@@ -672,141 +699,774 @@
     <!-- Tinacos y Cisternas -->
     <div class="catalog-section active" id="cat-tinacos">
       <div class="products-grid">
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/tinaco.png" alt="Cisterna 1200 litros">
-</div><div class="product-card-body"><h4>Cisterna 1,200 Lts</h4><div class="product-price">$1,800.00</div></div></div>
+       <div class="product-card" onclick="toggleProduct(this)">
 
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/tinaco.png" alt="Cisterna 2800 litros">
-</div><div class="product-card-body"><h4>Cisterna 2,800 Lts</h4><div class="product-price">$6,700.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/tinaco.png" alt="Cisterna 5000 litros">
-</div><div class="product-card-body"><h4>Cisterna 5,000 Lts</h4><div class="product-price">$10,700.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/tinaco.png" alt="Cisterna 10000 litros">
-</div><div class="product-card-body"><h4>Cisterna 10,000 Lts</h4><div class="product-price">$25,700.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/tinaco.png" alt="Cisterna 1200 litros">
-</div><div class="product-card-body"><h4>Tinaco 1,200 Lts</h4><div class="product-price">$1,800.00</div></div></div>
+  <div class="product-card-top">
+    <img src="img/tinaco.png" alt="Cisterna 1200 litros">
+  </div>
+
+  <div class="product-card-body">
+    <h4>Cisterna 1,200 Lts</h4>
+    <div class="product-price">$1,800.00</div>
+  </div>
+
+  <div class="product-extra">
+    <strong>Información adicional</strong>
+
+    <ul>
+      <li>Capacidad: 1,200 litros</li>
+      <li>Material: Polietileno de alta resistencia</li>
+      <li>tricapa anti rayos uv</li>
+    </ul>
+  </div>
+
+</div>
+
+        <div class="product-card" onclick="toggleProduct(this)">
+
+  <div class="product-card-top">
+    <img src="img/tinaco.png" alt="Cisterna 1200 litros">
+  </div>
+
+  <div class="product-card-body">
+    <h4>Cisterna 2800 Lts</h4>
+    <div class="product-price">$6,700</div>
+  </div>
+
+  <div class="product-extra">
+    <strong>Información adicional</strong>
+
+    <ul>
+      <li>Capacidad: 2,800 litros</li>
+      <li>Material: Polietileno de alta resistencia</li>
+      <li>Uso: Almacenamiento de agua</li>
+      <li>Material: Polietileno de alta resistencia</li>
+      <li>tricapa anti rayos uv</li>
+    </ul>
+  </div>
+
+</div>
+        <div class="product-card" onclick="toggleProduct(this)">
+
+  <div class="product-card-top">
+    <img src="img/tinaco.png" alt="Cisterna 1200 litros">
+  </div>
+
+  <div class="product-card-body">
+    <h4>Cisterna 5,000 Lts</h4>
+    <div class="product-price">$10,700</div>
+  </div>
+
+  <div class="product-extra">
+    <strong>Información adicional</strong>
+
+    <ul>
+      <li>Capacidad: 5,000 litros</li>
+      <li>Material: Polietileno de alta resistencia</li>
+      <li>Uso: Almacenamiento de agua</li>
+     <li>Material: Polietileno de alta resistencia</li>
+      <li>tricapa anti rayos uv</li>
+    </ul>
+  </div>
+
+</div>
+        <div class="product-card" onclick="toggleProduct(this)">
+
+  <div class="product-card-top">
+    <img src="img/tinaco.png" alt="Cisterna 1200 litros">
+  </div>
+
+  <div class="product-card-body">
+    <h4>Cisterna 10,000 Lts</h4>
+    <div class="product-price">$15,700</div>
+  </div>
+
+  <div class="product-extra">
+    <strong>Información adicional</strong>
+
+    <ul>
+      <li>Capacidad: 10,000 litros</li>
+      <li>Material: Polietileno de alta resistencia</li>
+      <li>Uso: Almacenamiento de agua</li>
+      <li>Material: Polietileno de alta resistencia</li>
+      <li>tricapa anti rayos uv</li>
+    </ul>
+  </div>
+
+</div>
+      
       </div>
     </div>
 
     <!-- Colchón -->
     <div class="catalog-section" id="cat-colchon">
       <div class="products-grid">
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/colchonlugo.png" alt="colchon lugo individual">
-</div><div class="product-card-body"><h4>Colchón Lugo Individual</h4><div class="product-price">$2,800.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/colchonlugo.png" alt="colchon matrimonial">
-</div><div class="product-card-body"><h4>Colchón Lugo Matrimonial</h4><div class="product-price">$3,050.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/colchonlugo.png" alt="colchon lugo king size">
-</div><div class="product-card-body"><h4>Colchón Lugo King Size</h4><div class="product-price">$4,350.00</div></div></div>
+        <div class="product-card" onclick="toggleProduct(this)">
+
+  <div class="product-card" onclick="toggleProduct(this)">
+  <div class="product-card-top">
+    <img src="img/colchonlugo.png" alt="colchon lugo individual">
+  </div>
+
+  <div class="product-card-body">
+    <h4>Colchón Lugo Individual</h4>
+    <div class="product-price">$2,800.00</div>
+  </div>
+
+  <div class="product-extra">
+    <strong>Información adicional</strong>
+    <ul>
+      <li>Tamaño: Individual</li>
+      <li>Ideal para una persona</li>
+      <li>Material acolchado de alta resistencia</li>
+      <li>Brinda comodidad y soporte para el descanso</li>
+      <li>Pago en parcialidades disponible</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+        <div class="product-card" onclick="toggleProduct(this)">
+
+  <div class="product-card-top">
+    <img src="img/colchonlugo.png" alt="colchon matrimonial">
+  </div>
+
+  <div class="product-card-body">
+    <h4>Colchón Lugo Matrimonial</h4>
+    <div class="product-price">$3,050.00</div>
+  </div>
+
+  <div class="product-extra">
+    <strong>Información adicional</strong>
+    <ul>
+      <li>Tamaño: Matrimonial</li>
+      <li>Ideal para dos personas</li>
+      <li>Diseño confortable para un descanso adecuado</li>
+      <li>Material acolchado de alta resistencia</li>
+      <li>Brinda soporte y comodidad durante el sueño</li>
+      <li>Pago en parcialidades disponible</li>
+      <li>Entrega a finales de cada mes</li>
+    </ul>
+  </div>
+
+</div>
+        <div class="product-card" onclick="toggleProduct(this)">
+
+  <div class="product-card-top">
+    <img src="img/colchonlugo.png" alt="colchon lugo king size">
+  </div>
+
+  <div class="product-card-body">
+    <h4>Colchón Lugo King Size</h4>
+    <div class="product-price">$4,350.00</div>
+  </div>
+
+  <div class="product-extra">
+    <strong>Información adicional</strong>
+    <ul>
+      <li>Tamaño: King Size</li>
+      <li>Ideal para dos personas</li>
+      <li>Mayor espacio y comodidad para el descanso</li>
+      <li>Material acolchado de alta resistencia</li>
+      <li>Excelente soporte y durabilidad</li>
+      <li>Pago en parcialidades disponible</li>
+      <li>Entrega a finales de cada mes</li>
+    </ul>
+  </div>
+
+</div>
+
       </div>
     </div>
 
     <!-- Solar -->
-    <div class="catalog-section" id="cat-solar">
-      <div class="products-grid">
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/calentadorsolar.png" alt="Calentador Solar 8 Tubos">
-</div><div class="product-card-body"><h4>Calentador Solar 8 Tubos</h4><div class="product-price">$3,140.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/calentadorsolar.png" alt="calentador solar 10 tubos">
-</div><div class="product-card-body"><h4>Calentador Solar 10 Tubos</h4><div class="product-price">$3,440.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/calentadorsolar.png" alt="calentador solar 12 tubos">
-</div><div class="product-card-body"><h4>Calentador Solar 12 Tubos</h4><div class="product-price">$3,850.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/calentadorsolar.png" alt="15 tubos">
-</div><div class="product-card-body"><h4>Calentador Solar 15 Tubos</h4><div class="product-price">$4,400.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/calentadorsolar.png" alt="18 tubos">
-</div><div class="product-card-body"><h4>Calentador Solar 18 Tubos</h4><div class="product-price">$5,150.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/calentadorsolar.png" alt="20 tubos">
-</div><div class="product-card-body"><h4>Calentador Solar 20 Tubos</h4><div class="product-price">$5,550.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/calentadorsolar.png" alt="24 tubos">
-</div><div class="product-card-body"><h4>Calentador Solar 24 Tubos</h4><div class="product-price">$6,450.00</div></div></div>
-        <div class="product-card">
-  <div class="product-card-top">
-    <img src="img/calentadorsolar.png" alt="30 tubos">
-  </div>
-  <div class="product-card-body">
-    <h4>Calentador Solar 30 Tubos</h4>
-    <div class="product-price">$7,700.00</div>
-  </div>
-</div>
-</div>
-</div>
-    <!-- Bombas -->
-    <div class="catalog-section" id="cat-bombas">
-      <div class="products-grid">
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/bombapretul.png" alt="pretul">
-</div><div class="product-card-body"><h4>Bomba Pretul ½ HP</h4><div class="product-price">$500.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/bombatruper.png" alt="truper">
-</div><div class="product-card-body"><h4>Bomba Truper 1 HP</h4><div class="product-price">$1,450.00</div></div></div>
+<div class="catalog-section" id="cat-solar">
+  <div class="products-grid">
+
+    <!-- 8 Tubos -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/calentadorsolar.png" alt="Calentador Solar 8 Tubos">
+      </div>
+      <div class="product-card-body">
+        <h4>Calentador Solar 8 Tubos</h4>
+        <div class="product-price">$3,140.00</div>
+      </div>
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Capacidad aproximada: 80 litros</li>
+          <li>Ideal para 1 o 2 personas</li>
+          <li>Ahorro en consumo de gas</li>
+          <li>Material resistente a la intemperie</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
       </div>
     </div>
+
+    <!-- 10 Tubos -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/calentadorsolar.png" alt="Calentador Solar 10 Tubos">
+      </div>
+      <div class="product-card-body">
+        <h4>Calentador Solar 10 Tubos</h4>
+        <div class="product-price">$3,440.00</div>
+      </div>
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Capacidad aproximada: 100 litros</li>
+          <li>Ideal para 2 personas</li>
+          <li>Reduce el gasto de gas LP</li>
+          <li>Fácil mantenimiento</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 12 Tubos -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/calentadorsolar.png" alt="Calentador Solar 12 Tubos">
+      </div>
+      <div class="product-card-body">
+        <h4>Calentador Solar 12 Tubos</h4>
+        <div class="product-price">$3,850.00</div>
+      </div>
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Capacidad aproximada: 120 litros</li>
+          <li>Ideal para 2 a 3 personas</li>
+          <li>Aprovecha la energía solar</li>
+          <li>Fabricado con materiales duraderos</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 15 Tubos -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/calentadorsolar.png" alt="Calentador Solar 15 Tubos">
+      </div>
+      <div class="product-card-body">
+        <h4>Calentador Solar 15 Tubos</h4>
+        <div class="product-price">$4,400.00</div>
+      </div>
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Capacidad aproximada: 150 litros</li>
+          <li>Ideal para familias de 3 personas</li>
+          <li>Disminuye costos de energía</li>
+          <li>Alta eficiencia térmica</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 18 Tubos -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/calentadorsolar.png" alt="Calentador Solar 18 Tubos">
+      </div>
+      <div class="product-card-body">
+        <h4>Calentador Solar 18 Tubos</h4>
+        <div class="product-price">$5,150.00</div>
+      </div>
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Capacidad aproximada: 180 litros</li>
+          <li>Ideal para 3 a 4 personas</li>
+          <li>Excelente rendimiento</li>
+          <li>Bajo mantenimiento</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 20 Tubos -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/calentadorsolar.png" alt="Calentador Solar 20 Tubos">
+      </div>
+      <div class="product-card-body">
+        <h4>Calentador Solar 20 Tubos</h4>
+        <div class="product-price">$5,550.00</div>
+      </div>
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Capacidad aproximada: 200 litros</li>
+          <li>Ideal para familias de 4 personas</li>
+          <li>Ahorro significativo de gas</li>
+          <li>Diseño resistente y duradero</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 24 Tubos -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/calentadorsolar.png" alt="Calentador Solar 24 Tubos">
+      </div>
+      <div class="product-card-body">
+        <h4>Calentador Solar 24 Tubos</h4>
+        <div class="product-price">$6,450.00</div>
+      </div>
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Capacidad aproximada: 240 litros</li>
+          <li>Ideal para familias de 4 a 5 personas</li>
+          <li>Mayor producción de agua caliente</li>
+          <li>Estructura galvanizada</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 30 Tubos -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/calentadorsolar.png" alt="Calentador Solar 30 Tubos">
+      </div>
+      <div class="product-card-body">
+        <h4>Calentador Solar 30 Tubos</h4>
+        <div class="product-price">$7,700.00</div>
+      </div>
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Capacidad aproximada: 300 litros</li>
+          <li>Ideal para familias numerosas</li>
+          <li>Máximo aprovechamiento de energía solar</li>
+          <li>Alta capacidad de almacenamiento</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+   <!-- Bombas -->
+<div class="catalog-section" id="cat-bombas">
+  <div class="products-grid">
+
+    <!-- Bomba Pretul -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/bombapretul.png" alt="Bomba Pretul ½ HP">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Bomba Pretul ½ HP</h4>
+        <div class="product-price">$500.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Potencia: ½ HP</li>
+          <li>Ideal para uso doméstico</li>
+          <li>Diseñada para suministro y traslado de agua</li>
+          <li>Construcción resistente para larga duración</li>
+          <li>Fácil instalación y mantenimiento</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bomba Truper -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/bombatruper.png" alt="Bomba Truper 1 HP">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Bomba Truper 1 HP</h4>
+        <div class="product-price">$1,450.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Potencia: 1 HP</li>
+          <li>Mayor capacidad de bombeo</li>
+          <li>Ideal para hogares, cisternas y tinacos</li>
+          <li>Motor de alto rendimiento</li>
+          <li>Fabricada con materiales resistentes</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
 
     <!-- Cocina -->
-    <div class="catalog-section" id="cat-cocina">
-      <div class="products-grid">
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/cacerolas.png" alt="ollas 8 oiezas">
-</div><div class="product-card-body"><h4>Juego de ollas 8 pz</h4><div class="product-price">$1,500.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/cacerolas.png" alt="cacerolas 12 piezas">
-</div><div class="product-card-body"><h4>Juego de cacerolas 12 pz</h4><div class="product-price">$1,360.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/cacerolas.png" alt="cacerola 6pieazas">
-</div><div class="product-card-body"><h4>Juego de cacerolas 6 pz</h4><div class="product-price">$1,200.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/ollaexpresexco.png" alt="Cisterna 1200 litros">
-</div><div class="product-card-body"><h4>Olla exprés 6 litros</h4><div class="product-price">$800.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/tarja.png" alt="Cisterna 1200 litros">
-</div><div class="product-card-body"><h4>Tarja 0.50×1m + accesorios</h4><div class="product-price">$1,000.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/tanquedegas+parrilla.png" alt="Cisterna 1200 litros">
-</div><div class="product-card-body"><h4>Parrilla + tanque 20kg + accesorios</h4><div class="product-price">$2,800.00</div></div></div>
+<div class="catalog-section" id="cat-cocina">
+  <div class="products-grid">
+
+    <!-- Juego de ollas 8 piezas -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/cacerolas.png" alt="ollas 8 piezas">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Juego de ollas 8 pz</h4>
+        <div class="product-price">$1,500.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Juego completo de 8 piezas</li>
+          <li>Ideal para uso doméstico</li>
+          <li>Material resistente al calor</li>
+          <li>Fácil limpieza y mantenimiento</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
       </div>
     </div>
 
-    <!-- Otros -->
-    <div class="catalog-section" id="cat-otros">
-      <div class="products-grid">
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/kitjardineria.png" alt="jardin ">
-</div><div class="product-card-body"><h4>Kit de jardín (9 pz)</h4><div class="product-price">$1,850.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/lavadora+plancha.png" alt="lavadora">
-</div><div class="product-card-body"><h4>Lavadora / Plancha</h4><div class="product-price">$3,600.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">🌽</div><div class="product-card-body"><h4>Molino de maíz 1CP</h4><div class="product-price">$6,600.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/impermeavilizante .png" alt="impermeabilizante">
-</div><div class="product-card-body"><h4>Impermeabilizante</h4><div class="product-price">$1,000.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/tubosolar.png " alt="tubo solar">
-</div><div class="product-card-body"><h4>Tubo solar</h4><div class="product-price">$200.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/laminagalvanizada.png" alt="Cisterna 1200 litros">
-</div><div class="product-card-body"><h4>10 láminas Gal C-28</h4><div class="product-price">$2,500.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/burro.png" alt="Cisterna 1200 litros">
-</div><div class="product-card-body"><h4>Burro de planchar</h4><div class="product-price">$700.00</div></div></div>
-        <div class="product-card"><div class="product-card-top">
-  <img src="img/juegodebaño.png" alt="Cisterna 1200 litros">
-</div><div class="product-card-body"><h4>Juego de baño</h4><div class="product-price">$1,450.00</div></div></div>
+    <!-- Juego de cacerolas 12 piezas -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/cacerolas.png" alt="cacerolas 12 piezas">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Juego de cacerolas 12 pz</h4>
+        <div class="product-price">$1,360.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Juego completo de 12 piezas</li>
+          <li>Incluye diferentes tamaños</li>
+          <li>Ideal para familias</li>
+          <li>Material duradero y resistente</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Juego de cacerolas 6 piezas -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/cacerolas.png" alt="cacerolas 6 piezas">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Juego de cacerolas 6 pz</h4>
+        <div class="product-price">$1,200.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Juego práctico de 6 piezas</li>
+          <li>Ideal para cocinas pequeñas</li>
+          <li>Material resistente al uso diario</li>
+          <li>Fácil almacenamiento</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Olla exprés -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/ollaexpresexco.png" alt="Olla exprés 6 litros">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Olla exprés 6 litros</h4>
+        <div class="product-price">$800.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Capacidad: 6 litros</li>
+          <li>Cocción rápida y eficiente</li>
+          <li>Ideal para preparar alimentos en menos tiempo</li>
+          <li>Sistema de seguridad integrado</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tarja -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/tarja.png" alt="Tarja 0.50 x 1 metro">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Tarja 0.50×1m + accesorios</h4>
+        <div class="product-price">$1,000.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Medidas: 0.50 x 1.00 metros</li>
+          <li>Incluye accesorios básicos</li>
+          <li>Ideal para cocinas domésticas</li>
+          <li>Material resistente a la humedad</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Parrilla + tanque -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/tanquedegas+parrilla.png" alt="Parrilla y tanque">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Parrilla + tanque 20kg + accesorios</h4>
+        <div class="product-price">$2,800.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Incluye parrilla y tanque de 20 kg</li>
+          <li>Accesorios básicos incluidos</li>
+          <li>Ideal para cocina doméstica</li>
+          <li>Equipo práctico y funcional</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
       </div>
     </div>
 
   </div>
-</section>
+</div>
+    <!-- Otros -->
+<div class="catalog-section" id="cat-otros">
+  <div class="products-grid">
+
+    <!-- Kit de jardín -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/kitjardineria.png" alt="Kit de jardín">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Kit de jardín (9 pz)</h4>
+        <div class="product-price">$1,850.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Incluye 9 herramientas para jardinería</li>
+          <li>Material resistente y duradero</li>
+          <li>Ideal para mantenimiento de jardines y áreas verdes</li>
+          <li>Fácil almacenamiento y transporte</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Lavadora / Plancha -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/lavadora+plancha.png" alt="Lavadora y plancha">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Lavadora / Plancha</h4>
+        <div class="product-price">$3,600.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Ideal para las necesidades del hogar</li>
+          <li>Equipo práctico y funcional</li>
+          <li>Fácil instalación y uso</li>
+          <li>Diseño compacto y resistente</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Molino de maíz -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/molinodemaiz.png" alt="Molino de maíz">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Molino de maíz 1CP</h4>
+        <div class="product-price">$6,600.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Motor de 1 caballo de potencia</li>
+          <li>Ideal para molienda de maíz y granos</li>
+          <li>Estructura robusta de larga duración</li>
+          <li>Uso doméstico y comercial</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Impermeabilizante -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/impermeabilizante .png" alt="Impermeabilizante">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Impermeabilizante</h4>
+        <div class="product-price">$1,000.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Protección contra filtraciones y humedad</li>
+          <li>Ideal para techos y azoteas</li>
+          <li>Alta resistencia a la intemperie</li>
+          <li>Fácil aplicación</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tubo solar -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/tubosolar.png" alt="Tubo solar">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Tubo solar</h4>
+        <div class="product-price">$200.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Compatible con calentadores solares</li>
+          <li>Fabricado con materiales resistentes</li>
+          <li>Excelente captación de calor</li>
+          <li>Fácil reemplazo e instalación</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Láminas galvanizadas -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/laminagalvanizada.png" alt="Láminas galvanizadas">
+      </div>
+
+      <div class="product-card-body">
+        <h4>10 láminas Gal C-28</h4>
+        <div class="product-price">$2,500.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Paquete de 10 láminas galvanizadas</li>
+          <li>Calibre 28 de alta resistencia</li>
+          <li>Ideales para techos y construcciones</li>
+          <li>Protección contra corrosión</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Burro de planchar -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/burro.png" alt="Burro de planchar">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Burro de planchar</h4>
+        <div class="product-price">$700.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Superficie amplia para planchado cómodo</li>
+          <li>Estructura metálica resistente</li>
+          <li>Plegable para fácil almacenamiento</li>
+          <li>Ideal para uso doméstico</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Juego de baño -->
+    <div class="product-card" onclick="toggleProduct(this)">
+      <div class="product-card-top">
+        <img src="img/juegodebaño.png" alt="Juego de baño">
+      </div>
+
+      <div class="product-card-body">
+        <h4>Juego de baño</h4>
+        <div class="product-price">$1,450.00</div>
+      </div>
+
+      <div class="product-extra">
+        <strong>Información adicional</strong>
+        <ul>
+          <li>Juego completo para instalación en baño</li>
+          <li>Material resistente y de larga duración</li>
+          <li>Diseño práctico y funcional</li>
+          <li>Ideal para viviendas nuevas o remodelaciones</li>
+          <li>Pago en parcialidades disponible</li>
+          <li>Entrega a finales de cada mes</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <!-- ===================== PROCESO ===================== -->
 <section id="proceso">
@@ -973,682 +1633,56 @@
     document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
     if (!isOpen) item.classList.add('open');
   }
-</script>
-<!-- BOTÓN DEL CHAT -->
-<div id="chat-toggle" onclick="toggleChat()">💬</div>
+  function toggleProduct(card) {
 
-<!-- CHAT -->
-<div id="chat-container">
-  <div id="chat-header">Asistente Bienestar ❌</div>
-  <div id="chat-body"></div>
-  <input type="text" id="userInput" placeholder="Escribe tu pregunta...">
-  <button onclick="sendMessage()">Enviar</button>
-</div>
+  const abierto = card.classList.contains("active");
+
+  document.querySelectorAll(".product-card").forEach(item => {
+    item.classList.remove("active");
+  });
+
+  if(!abierto){
+    card.classList.add("active");
+  }
+
+}
+
+</script>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
 <style>
-#chat-toggle {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: linear-gradient(135deg, #2d6a4f, #40916c);
-  color: white;
-  font-size: 22px;
-  padding: 12px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0,0,0,.25);
-  transition: transform .2s;
-}
-#chat-toggle:hover {
-  transform: scale(1.1);
+/* SOLO ESTILOS QUE REALMENTE RESPETA */
+:root {
+	--chat--color-primary: #00ff88;
+	--chat--color-primary-shade-50: #00cc6a;
+	--chat--color-primary-shade-100: #00994d;
+
+	--chat--color-secondary: #0d0d0d;
+	--chat--color-background: #0d0d0d;
+	--chat--color-text: #ffffff;
 }
 
-#chat-container {
-  display: none;
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  width: 320px;
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,.25);
-  animation: fadeIn .3s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-#chat-header {
-  background: linear-gradient(135deg, #1a4731, #2d6a4f);
-  color: white;
-  padding: 12px;
-  font-weight: bold;
-  text-align: center;
-}
-
-#chat-body {
-  height: 260px;
-  overflow-y: auto;
-  padding: 12px;
-  background: #f9fafb;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.user-msg {
-  align-self: flex-end;
-  background: #40916c;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 12px 12px 0 12px;
-  max-width: 75%;
-}
-
-.bot-msg {
-  align-self: flex-start;
-  background: #e5e7eb;
-  color: #111;
-  padding: 8px 12px;
-  border-radius: 12px 12px 12px 0;
-  max-width: 75%;
-}
-
-#chat-input-area {
-  display: flex;
-  border-top: 1px solid #ddd;
-}
-
-#userInput {
-  flex: 1;
-  border: none;
-  padding: 10px;
-  outline: none;
-}
-
-#chat-container button {
-  background: #2d6a4f;
-  color: white;
-  border: none;
-  padding: 0 15px;
-  cursor: pointer;
-}
-#chat-container button:hover {
-  background: #1a4731;
+/* Fondo general */
+body {
+	background: #eff1ee;
 }
 </style>
-<script>
-function toggleChat() {
-  let chat = document.getElementById("chat-container");
-  chat.style.display = (chat.style.display === "none") ? "block" : "none";
-}
 
-function normalize(text) {
-  return text
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-}
+<script type="module">
+import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-let productos = [
+createChat({
+	webhookUrl: 'http://localhost:5678/webhook/37629196-8b06-4d77-9abc-73e862b77891/chat',
 
-  // 💧 TINACOS Y CISTERNAS
-  {
-    nombre: "tinaco Cisterna 1200 litros",
-    keywords: [" tinaco cisterna","1200","1200 litros"],
-    precio: "$1,800.00",
-    capacidad: "1200 litros",
-    categoria: "cisternas"
-  },
+	initialMessages: [
+		'👋 Hola, soy tu asistente '
+	],
 
-  {
-    nombre: "tinaco Cisterna 2800 litros",
-    keywords: ["tinaco cisterna","2800","2800 litros"],
-    precio: "$6,700.00",
-    capacidad: "2800 litros",
-    categoria: "cisternas"
-  },
-
-  {
-    nombre: "tinaco Cisterna 5000 litros",
-    keywords: ["tinaco cisterna","5000","5000 litros"],
-    precio: "$10,700.00",
-    capacidad: "5000 litros",
-    categoria: "cisternas"
-  },
-
-  {
-    nombre: "tinaco Cisterna 10000 litros",
-    keywords: ["tinaco cisterna","10000","10000 litros"],
-    precio: "$25,700.00",
-    capacidad: "10000 litros",
-    categoria: "cisternas"
-  },
-
-  {
-    nombre: "tinaco Tinaco 1200 litros",
-    keywords: ["tinaco tinaco","tinaco 1200"],
-    precio: "$1,800.00",
-    capacidad: "1200 litros",
-    colores: "negro y beige",
-    categoria: "tinacos"
-  },
-
-  // 🛏 COLCHONES
-  {
-    nombre: "Colchón Lugo Individual",
-    keywords: ["colchon","individual"],
-    precio: "$2,800.00",
-    tamaño: "individual",
-    categoria: "colchones"
-  },
-
-  {
-    nombre: "Colchón Lugo Matrimonial",
-    keywords: ["colchon","matrimonial"],
-    precio: "$3,050.00",
-    tamaño: "matrimonial",
-    categoria: "colchones"
-  },
-
-  {
-    nombre: "Colchón Lugo King Size",
-    keywords: ["colchon","king","king size"],
-    precio: "$4,350.00",
-    tamaño: "king size",
-    categoria: "colchones"
-  },
-
-  // ☀️ CALENTADORES
-  {
-    nombre: "Calentador Solar 8 Tubos",
-    keywords: ["calentador","solar","8 tubos"],
-    precio: "$3,140.00",
-    categoria: "calentadores"
-  },
-
-  {
-    nombre: "Calentador Solar 10 Tubos",
-    keywords: ["calentador","solar","10 tubos"],
-    precio: "$3,440.00",
-    categoria: "calentadores"
-  },
-
-  {
-    nombre: "Calentador Solar 12 Tubos",
-    keywords: ["calentador","solar","12 tubos"],
-    precio: "$3,850.00",
-    categoria: "calentadores"
-  },
-
-  {
-    nombre: "Calentador Solar 15 Tubos",
-    keywords: ["calentador","solar","15 tubos"],
-    precio: "$4,400.00",
-    categoria: "calentadores"
-  },
-
-  {
-    nombre: "Calentador Solar 18 Tubos",
-    keywords: ["calentador","solar","18 tubos"],
-    precio: "$5,150.00",
-    categoria: "calentadores"
-  },
-
-  {
-    nombre: "Calentador Solar 20 Tubos",
-    keywords: ["calentador","solar","20 tubos"],
-    precio: "$5,550.00",
-    categoria: "calentadores"
-  },
-
-  {
-    nombre: "Calentador Solar 24 Tubos",
-    keywords: ["calentador","solar","24 tubos"],
-    precio: "$6,450.00",
-    categoria: "calentadores"
-  },
-
-  {
-    nombre: "Calentador Solar 30 Tubos",
-    keywords: ["calentador","solar","30 tubos"],
-    precio: "$7,700.00",
-    categoria: "calentadores"
-  },
-
-  // ⚙️ BOMBAS
-  {
-    nombre: "Bomba Pretul 1/2 HP",
-    keywords: ["bomba","pretul","1/2 hp"],
-    precio: "$500.00",
-    categoria: "bombas"
-  },
-
-  {
-    nombre: "Bomba Truper 1 HP",
-    keywords: ["bomba","truper","1 hp"],
-    precio: "$1,450.00",
-    categoria: "bombas"
-  },
-
-  // 🍳 COCINA
-  {
-    nombre: "Juego de ollas 8 piezas",
-    keywords: ["ollas","juego de ollas"],
-    precio: "$1,500.00",
-    categoria: "cocina"
-  },
-
-  {
-    nombre: "Juego de cacerolas 12 piezas",
-    keywords: ["cacerolas","12 piezas"],
-    precio: "$1,360.00",
-    categoria: "cocina"
-  },
-
-  {
-    nombre: "Juego de cacerolas 6 piezas",
-    keywords: ["cacerolas","6 piezas"],
-    precio: "$1,200.00",
-    categoria: "cocina"
-  },
-
-  {
-    nombre: "Olla exprés 6 litros",
-    keywords: ["olla","olla expres"],
-    precio: "$800.00",
-    categoria: "cocina"
-  },
-
-  {
-    nombre: "Tarja .50x1m con accesorios",
-    keywords: ["tarja"],
-    precio: "$1,000.00",
-    categoria: "cocina"
-  },
-
-  {
-    nombre: "Parrilla con tanque 20kg y accesorios",
-    keywords: ["parrilla","tanque"],
-    precio: "$2,800.00",
-    categoria: "cocina"
-  },
-
-  // 🔧 OTROS
-  {
-    nombre: "Kit de jardín 9 piezas",
-    keywords: ["kit de jardin","jardin","jardineria"],
-    precio: "$1,850.00",
-    categoria: "otros"
-  },
-
-  {
-    nombre: "Lavadora / Plancha",
-    keywords: ["lavadora","plancha"],
-    precio: "$3,600.00",
-    categoria: "otros"
-  },
-
-  {
-    nombre: "Molino de maíz 1CP",
-    keywords: ["molino","maiz"],
-    precio: "$6,600.00",
-    categoria: "otros"
-  },
-
-  {
-    nombre: "Impermeabilizante",
-    keywords: ["impermeabilizante"],
-    precio: "$1,000.00",
-    categoria: "otros"
-  },
-
-  {
-    nombre: "Tubo Solar",
-    keywords: ["tubo solar"],
-    precio: "$200.00",
-    categoria: "otros"
-  },
-
-  {
-    nombre: "10 Láminas Gal C-28",
-    keywords: ["laminas","lamina"],
-    precio: "$2,500.00",
-    categoria: "otros"
-  },
-
-  {
-    nombre: "Burro de planchar",
-    keywords: ["burro de planchar"],
-    precio: "$700.00",
-    categoria: "otros"
-  },
-
-  {
-    nombre: "Juego de baño",
-    keywords: ["baño","juego de baño"],
-    precio: "$1,450.00",
-    categoria: "otros"
-  }
-
-];
-function sendMessage() {
-
-  let input = document.getElementById("userInput").value;
-  let chat = document.getElementById("chat-body");
-
-  if(input.trim() === "") return;
-
-  chat.innerHTML += `
-    <div class="user-msg">${input}</div>
-  `;
-
-  let clean = normalize(input);
-  let response = "";
-
-  // =========================
-  // SALUDOS
-  // =========================
-
-  if (
-    clean.includes("hola") ||
-    clean.includes("buenas") ||
-    clean.includes("que tal") ||
-    clean.includes("saludos")
-  ) {
-
-    response = "¡Hola! 👋 Bienvenido al Área de Bienestar de Hueypoxtla. Puedes preguntarme sobre productos, precios, horarios, pagos o requisitos.";
-
-  }
-
-  // =========================
-  // HORARIOS
-  // =========================
-
-  else if (
-    clean.includes("horario") ||
-    clean.includes("hora") ||
-    clean.includes("abren") ||
-    clean.includes("atienden")
-  ) {
-
-    response = "🕘 El horario de atención es de lunes a viernes de 9:00 am a 5:00 pm.";
-
-  }
-
-  // =========================
-  // UBICACIÓN
-  // =========================
-
-  else if (
-    clean.includes("direccion") ||
-    clean.includes("ubicacion") ||
-    clean.includes("donde")
-  ) {
-
-    response = "📍 Nos ubicamos en el Palacio Municipal de Hueypoxtla, Estado de México.";
-
-  }
-
-  // =========================
-  // REQUISITOS
-  // =========================
-
-  else if (
-    clean.includes("requisitos") ||
-    clean.includes("documentos") ||
-    clean.includes("que necesito")
-  ) {
-
-    response = "📋 Necesitas INE vigente, nombre completo, dos números telefónicos y elegir el producto que deseas adquirir.";
-
-  }
-
-  // =========================
-  // PAGOS
-  // =========================
-
-  else if (
-    clean.includes("pago") ||
-    clean.includes("abonos") ||
-    clean.includes("parcialidades")
-  ) {
-
-    response = "💳 Los pagos se realizan presencialmente en parcialidades acordadas con el Área de Bienestar.";
-
-  }
-
-  // =========================
-  // ENTREGAS
-  // =========================
-
-  else if (
-    clean.includes("entrega") ||
-    clean.includes("cuando entregan")
-  ) {
-
-    response = "📦 Las entregas se realizan a finales de cada mes.";
-
-  }
-
-  // =========================
-  // COLORES TINACO
-  // =========================
-
-  else if (
-    (clean.includes("color") || clean.includes("colores")) &&
-    clean.includes("tinaco")
-  ) {
-
-    response = "🎨 Los tinacos están disponibles en color negro y beige.";
-
-  }
-
-  // =========================
-  // TINACOS Y CISTERNAS
-  // =========================
-
-  else if (
-    clean.includes("tinacos") ||
-    clean.includes("cisternas")
-  ) {
-
-    response = `
-    💧 <b>Tinacos y Cisternas:</b><br><br>
-
-    • Cisterna 1200 litros — $1,800.00<br>
-    • Cisterna 2800 litros — $6,700.00<br>
-    • Cisterna 5000 litros — $10,700.00<br>
-    • Cisterna 10000 litros — $25,700.00<br>
-    • Tinaco 1200 litros — $1,800.00
-    `;
-
-  }
-
-  // =========================
-  // COLCHONES
-  // =========================
-
-  else if (
-    clean.includes("colchon") ||
-    clean.includes("colchones")
-  ) {
-
-    response = `
-    🛏 <b>Colchones disponibles:</b><br><br>
-
-    • Individual — $2,800.00<br>
-    • Matrimonial — $3,050.00<br>
-    • King Size — $4,350.00
-    `;
-
-  }
-
-  // =========================
-  // CALENTADORES
-  // =========================
-
-  else if (
-    clean.includes("calentador") ||
-    clean.includes("calentadores") ||
-    clean.includes("solar")
-  ) {
-
-    response = `
-    ☀️ <b>Calentadores solares:</b><br><br>
-
-    • 8 Tubos — $3,140.00<br>
-    • 10 Tubos — $3,440.00<br>
-    • 12 Tubos — $3,850.00<br>
-    • 15 Tubos — $4,400.00<br>
-    • 18 Tubos — $5,150.00<br>
-    • 20 Tubos — $5,550.00<br>
-    • 24 Tubos — $6,450.00<br>
-    • 30 Tubos — $7,700.00<br>
-    un tubo solar solo, cuesta$200
-    `;
-}
-  
-
-  // =========================
-  // BOMBAS
-  // =========================
-
-  else if (
-    clean.includes("bomba") ||
-    clean.includes("bombas")
-  ) {
-
-    response = `
-    ⚙️ <b>Bombas disponibles:</b><br><br>
-
-    • Bomba Pretul 1/2 HP — $500.00<br>
-    • Bomba Truper 1 HP — $1,450.00
-    `;
-
-  }
-
-  // =========================
-  // COCINA
-  // =========================
-
-  else if (
-    clean.includes("cocina") ||
-    clean.includes("ollas") ||
-    clean.includes("cacerolas") ||
-    clean.includes("parrilla")
-  ) {
-
-    response = `
-    🍳 <b>Productos de cocina:</b><br><br>
-
-    • Juego de ollas 8 piezas — $1,500.00<br>
-    • Juego de cacerolas 12 piezas — $1,360.00<br>
-    • Juego de cacerolas 6 piezas — $1,200.00<br>
-    • Olla exprés 6 litros — $800.00<br>
-    • Tarja .50x1m con accesorios — $1,000.00<br>
-    • Parrilla con tanque 20kg y accesorios — $2,800.00
-    `;
-
-  }
-
-  // =========================
-  // OTROS
-  // =========================
-
-  else if (
-    clean.includes("otros") ||
-    clean.includes("otros productos") ||
-    clean.includes("que mas venden")
-  ) {
-
-    response = `
-    🔧 <b>Otros productos:</b><br><br>
-
-    • Kit de jardín 9 piezas — $1,850.00<br>
-    • Lavadora / Plancha — $3,600.00<br>
-    • Molino de maíz 1CP — $6,600.00<br>
-    • Impermeabilizante — $1,000.00<br>
-    • Tubo Solar — $200.00<br>
-    • 10 Láminas Gal C-28 — $2,500.00<br>
-    • Burro de planchar — $700.00<br>
-    • Juego de baño — $1,450.00
-    `;
-
-  }
-
-  // =========================
-  // PREGUNTAS INDIVIDUALES
-  // =========================
-
-  else if (
-  clean.includes("juego de baño"),
-  clean.includes("juego baño"),
-  clean.includes("bano")
-) {
-
-  response = "🚿 El Juego de baño tiene un precio de $1,450.00.";
-
-}
-
-  else if (
-    clean.includes("kit de jardin"),
-clean.includes("kit de jardineria")
-  ) {
-
-    response = "🌿 El Kit de jardín de 9 piezas cuesta $1,850.00.";
-
-  }
-
-  else if (
-    clean.includes("burro de planchar"),
-    clean.includes("burro")
-  ) {
-
-    response = "🧺 El Burro de planchar cuesta $700.00.";
-
-  }
-
-  else if (
-    clean.includes("impermeabilizante")
-  ) {
-
-    response = "🏠 El impermeabilizante cuesta $1,000.00.";
-
-  }
-
-  else if (
-    clean.includes("molino")
-  ) {
-
-    response = "🌽 El Molino de maíz 1CP cuesta $6,600.00.";
-
-  }
-
-  else if (
-    clean.includes("lavadora")
-  ) {
-
-    response = "👕 La Lavadora / Plancha cuesta $3,600.00.";
-
-  }
-
-  else {
-
-    response = "🤖 Lo siento, no entendí bien tu pregunta. Puedes preguntarme sobre productos, precios, horarios, pagos o requisitos.";
-
-  }
-
-  chat.innerHTML += `
-    <div class="bot-msg">${response}</div>
-  `;
-
-  document.getElementById("userInput").value = "";
-  chat.scrollTop = chat.scrollHeight;
-}
+	theme: {
+		primaryColor: '#00ff88',
+		position: 'right'
+	}
+});
 </script>
 </body>
 </html>
